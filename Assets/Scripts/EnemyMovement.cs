@@ -1,0 +1,33 @@
+using UnityEngine;
+
+public class EnemyMovement : MonoBehaviour
+{
+    [Header("References")]
+    [SerializedField] private Rigidbody2D rb;
+
+    [Header("Attributes")]
+    [SerializedField] private float moveSpeed = 1f;
+
+    private Transform target;
+    private int pathIndex = 0;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private void Start()
+    {
+        target = LevelManager.main.path[pathIndex];
+    }
+
+    // Update is called once per frame
+    private void Update()
+    {
+        if (Vector2.Distance(target.position, transform.position) <= 0.1f)
+        {
+            pathIndex++;
+
+            if (pathIndex == LevelManager.main.path.Length)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
+}

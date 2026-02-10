@@ -1,0 +1,40 @@
+using UnityEngine;
+
+public class LevelManager : MonoBehaviour
+{
+    public static LevelManager main;
+    public Transform startPoint;
+    //public Transform[] path;
+
+    public GameObject FindNextPoint()
+    {
+        GameObject[] pointList;
+        pointList = GameObject.FindGameObjectsWithTag("Points");
+        GameObject next = null;
+        float distance = Mathf.Infinity;
+        Vector3 position = transform.position;
+        foreach (GameObject po in pointList)
+        {
+            Vector3 diff = po.transform.position - position;
+            float curDistance = diff.sqrMagnitude;
+            if (curDistance < distance)
+            {
+                closest = po;
+                distance = curDistance;
+            }
+        }
+    }
+
+    private void Awake()
+    {
+        main = this;
+
+    }
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    // Update is called once per frame
+   // void Update()
+   // {
+        
+   // }
+}
