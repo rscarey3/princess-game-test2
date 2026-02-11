@@ -8,7 +8,7 @@ public class PointInfo : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        //code
     }
 
     // Update is called once per frame
@@ -19,9 +19,10 @@ public class PointInfo : MonoBehaviour
            // visibleCorpses++;
         //} else if (this.IsTrigger == false)
         //{
-            visibleCorpses = 0;
+          //  visibleCorpses = 0;
         //}
         //add a check to update visibleCorpses
         dangerLevel = visibleCorpses;
+
     }
 }

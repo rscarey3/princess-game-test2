@@ -4,13 +4,14 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager main;
     public Transform startPoint;
-    //public Transform[] path;
+    public Transform[] path;
+    public Transform[] basePath;
 
     public GameObject FindNextPoint()
     {
         GameObject[] pointList;
         pointList = GameObject.FindGameObjectsWithTag("Points");
-        GameObject next = null;
+        GameObject closest = null;
         float distance = Mathf.Infinity;
         Vector3 position = transform.position;
         foreach (GameObject po in pointList)
@@ -23,6 +24,7 @@ public class LevelManager : MonoBehaviour
                 distance = curDistance;
             }
         }
+        return closest;
     }
 
     private void Awake()
@@ -30,11 +32,16 @@ public class LevelManager : MonoBehaviour
         main = this;
 
     }
+
+    void Start()
+    {
+        //code here
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     // Update is called once per frame
-   // void Update()
-   // {
-        
-   // }
+   void Update()
+    {
+       //code here 
+    }
 }

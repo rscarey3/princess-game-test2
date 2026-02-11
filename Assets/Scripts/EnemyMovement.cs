@@ -11,7 +11,7 @@ public class EnemyMovement : MonoBehaviour
     private Transform target;
     private int pathIndex = 0;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    //need to figure out a path for when there is no danger level
     private void Start()
     {
         target = LevelManager.main.path[pathIndex];
