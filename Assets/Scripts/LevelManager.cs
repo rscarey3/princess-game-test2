@@ -42,6 +42,13 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
    void Update()
     {
+        if (this.dangerLevel != 0)
+        {
+            //run FindNextPoint
+        } else if (this.dangerLevel == 0)
+        {
+            //go for the next item in the basePath array
+        }
        //code here 
     }
 }
