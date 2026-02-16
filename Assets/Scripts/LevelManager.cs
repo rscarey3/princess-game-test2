@@ -4,8 +4,9 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager main;
     public Transform startPoint;
-    public Transform[] path;
-    public Transform[] basePath;
+    public Transform[] mainpath;
+    public Transform[] altpathA;
+    public Transform[] altpathB;
 
    // public GameObject FindNextPoint()
     //{
@@ -31,6 +32,27 @@ public class LevelManager : MonoBehaviour
     {
         main = this;
 
+    }
+
+    void dangerCheck()
+    {
+        //when (transform.position = DangerCheck)
+        //{
+            //int d1 = mainPath[1].dangerLevel;
+            //int d2 = altpathA[1].dangerLevel;
+            //int d3 = altpathB[1].dangerLevel;
+            //if (d1 <= d2 && d1 <= d3)
+            //{
+            //  this.path = mainpath;
+            //} else if (d2 < d1 && d2 <= d3)
+            //{
+            //  this.path = altpathA;
+            //} else
+            //{
+            //  this.path = altpathB;
+            //}
+
+        //}
     }
 
     void Start()
