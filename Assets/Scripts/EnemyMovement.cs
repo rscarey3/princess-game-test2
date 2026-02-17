@@ -10,6 +10,7 @@ public class EnemyMovement : MonoBehaviour
 
     private Transform target;
     private int pathIndex = 0;
+    //selectedPath = null;
    
     private void Start()
     {
