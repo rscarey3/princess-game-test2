@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
+
+    // previousPoint;
+    // currentPoint;
     public static LevelManager main;
     public Transform startPoint;
     public Transform[] mainpath;
@@ -36,23 +39,32 @@ public class LevelManager : MonoBehaviour
 
     void dangerCheck()
     {
-        //when (transform.position = DangerCheck)
-        //{
-            //int d1 = mainPath[1].dangerLevel;
-            //int d2 = altpathA[1].dangerLevel;
-            //int d3 = altpathB[1].dangerLevel;
-            //if (d1 <= d2 && d1 <= d3)
-            //{
-            //  this.path = mainpath;
-            //} else if (d2 < d1 && d2 <= d3)
-            //{
-            //  this.path = altpathA;
-            //} else
-            //{
-            //  this.path = altpathB;
-            //}
+        //if (possiblePoint == previousPoint)
+        //{ Check again}
+        // else {this.path = currentPoint;}
+        //if (transform.position = DangerCheck)
+       // {  
+       //     int d1 = mainPath[1].dangerLevel;
+        //    int d2 = altpathA[1].dangerLevel;
+       //     int d3 = altpathB[1].dangerLevel;
+       //     if (d1 <= d2 && d1 <= d3)
+        //    {
+       //       this.path = mainpath;
+       //     } else if (d2 < d1 && d2 <= d3)
+       //     {
+        //      this.path = altpathA;
+        //    } else
+       //     {
+         //     this.path = altpathB;
+         //   }
 
-        //}
+       // }
+    }
+
+    void endCheck()
+    {
+        //if (previousPoint == "Turn Point")
+        //{currentPoint = "End Point";}
     }
 
     void Start()
@@ -64,6 +76,8 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
    void Update()
     {
+        // previousPoint = currentPoint;
+        // currentPoint = pathIndex + 1;
         //if (this.dangerLevel != 0)
         //{
             //run FindNextPoint

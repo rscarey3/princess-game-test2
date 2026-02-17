@@ -10,11 +10,10 @@ public class EnemyMovement : MonoBehaviour
 
     private Transform target;
     private int pathIndex = 0;
-
-    //need to figure out a path for when there is no danger level
+   
     private void Start()
     {
-        //target = LevelManager.main.path[pathIndex];
+       // target = LevelManager.main.path[pathIndex];
     }
 
     // Update is called once per frame
@@ -22,12 +21,13 @@ public class EnemyMovement : MonoBehaviour
     {
         //if (Vector2.Distance(target.position, transform.position) <= 0.1f)
        // {
-           //pathIndex++;
+        //    pathIndex++;
 
-           // if (pathIndex == LevelManager.main.path.Length)
-          // {
-                Destroy(gameObject);
-          //  }
-       // }
+        //    if (pathIndex == LevelManager.main.path.Length)
+        //    {
+        //        Destroy(gameObject);
+        //    }
+        //}
     }
+
 }

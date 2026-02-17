@@ -7,6 +7,7 @@ public class SceneLoader : MonoBehaviour
 
     private bool isPaused = false;
     private bool gameUIVisible;
+    private bool cutsceneUIVisible;
 
     private void Awake()
     {
@@ -51,13 +52,22 @@ public class SceneLoader : MonoBehaviour
         Time.timeScale = 0f;
         isPaused = true;
         gameUIVisible = false;
+        cutsceneUIVisible = false;
     }
 
     public void ResumeGame()
     {
         Time.timeScale = 1f;
         isPaused = false;
-        gameUIVisible = true;
+        //if (SceneManager.GetActiveScene() = "LevelScene")
+        //{
+            //gameUIVisible = true;
+            //cutsceneUIVisible = false;
+        //} else if (SceneManager.GetActiveScene() = "CutScene")
+        //{
+            //gameUIVisible = false;
+            //cutsceneUIVisible = true;
+        //}
     }
 
     public void QuitGame()
