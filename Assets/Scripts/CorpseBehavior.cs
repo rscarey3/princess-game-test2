@@ -2,16 +2,12 @@ using UnityEngine;
 
 public class CorpseBehavior : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+
 
     void spawnIn()
     {
         //when enemy.isDead == true
-        //{//add script to make one instance of corpse object appear}
+        //{//add script to make one instance of corpse object appear and also make sure to tag corpse object so it hits isTriggered collider}
     }
 
     void corpseCollected()
@@ -23,9 +19,8 @@ public class CorpseBehavior : MonoBehaviour
         //}
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        //code here
     }
 }

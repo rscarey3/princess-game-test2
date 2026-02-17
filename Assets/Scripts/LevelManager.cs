@@ -3,8 +3,8 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
 
-    // previousPoint;
-    // currentPoint;
+    // private Transform previousPoint;
+    // private Transform currentPoint;
     public static LevelManager main;
     public Transform startPoint;
     public Transform[] mainpath;

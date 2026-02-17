@@ -16,7 +16,6 @@ public class EnemyMovement : MonoBehaviour
        // target = LevelManager.main.path[pathIndex];
     }
 
-    // Update is called once per frame
     private void Update()
     {
         //if (Vector2.Distance(target.position, transform.position) <= 0.1f)
