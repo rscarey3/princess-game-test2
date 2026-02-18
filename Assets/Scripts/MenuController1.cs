@@ -21,7 +21,7 @@ public class MenuController1 : MonoBehaviour
 
     public void OpenCreditsMenu()
     {
-        StartCoroutine(TransitionMenus(creditsMenu, mainMenu));
+        StartCoroutine(TransitionMenus(mainMenu, creditsMenu));
     }
 
     public void OptionsBackToMainMenu()
