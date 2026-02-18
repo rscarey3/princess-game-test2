@@ -7,6 +7,7 @@ public class LevelManager : MonoBehaviour
     // private Transform currentPoint;
     public static LevelManager main;
     public Transform startPoint;
+    public Transform[] firstSteps;
     public Transform[] mainpath;
     public Transform[] altpathA;
     public Transform[] altpathB;
@@ -57,6 +58,7 @@ public class LevelManager : MonoBehaviour
        //     {
          //     this.path = altpathB;
          //   }
+        //enemy.selectedPath = this.path
 
        // }
     }
@@ -69,11 +71,9 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        //code here
+        //this.path = firstSteps;
+        //blah blah have it run the first two steps and then stop
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-
-    // Update is called once per frame
    void Update()
     {
         // previousPoint = currentPoint;
