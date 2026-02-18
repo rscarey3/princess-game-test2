@@ -1,31 +1,43 @@
 fileFormatVersion: 2
-guid: cf4ecb242cb5a464880f2e20178a079b
+guid: a8767b278d7676c44bef069de095ca51
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6896276164857307867
-    second: knightA_still_sprites_0
+      213: -9022700132626218796
+    second: walk_cycle_spritesheet_0
   - first:
-      213: -7923108231320530381
-    second: knightA_still_sprites_1
+      213: -6084886468618006034
+    second: walk_cycle_spritesheet_1
   - first:
-      213: -9021960952963870851
-    second: knightA_still_sprites_2
+      213: -7440828197917663292
+    second: walk_cycle_spritesheet_2
   - first:
-      213: 1132395541136045720
-    second: knightA_still_sprites_3
+      213: -8291233780599346711
+    second: walk_cycle_spritesheet_3
   - first:
-      213: 8330458970143988563
-    second: knightA_still_sprites_4
+      213: -1485509881782860348
+    second: walk_cycle_spritesheet_4
   - first:
-      213: 8444324455954966189
-    second: knightA_still_sprites_5
+      213: -711833912225920131
+    second: walk_cycle_spritesheet_5
   - first:
-      213: -6441571164661526382
-    second: knightA_still_sprites_6
+      213: 7364956982385882534
+    second: walk_cycle_spritesheet_6
   - first:
-      213: 7387215297164674168
-    second: knightA_still_sprites_7
+      213: -4969765028233088521
+    second: walk_cycle_spritesheet_7
+  - first:
+      213: 8745487506272341389
+    second: walk_cycle_spritesheet_8
+  - first:
+      213: 2369299333735335275
+    second: walk_cycle_spritesheet_9
+  - first:
+      213: 739490957528691668
+    second: walk_cycle_spritesheet_10
+  - first:
+      213: -5285373897985784388
+    second: walk_cycle_spritesheet_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,13 +133,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: knightA_still_sprites_0
+      name: walk_cycle_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 755
-        width: 420
-        height: 624
+        x: 21
+        y: 400
+        width: 195
+        height: 293
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +148,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52ddfa8bd518b40a0800000000000000
-      internalID: -6896276164857307867
+      spriteID: 4d0c1ff980ee8c280800000000000000
+      internalID: -9022700132626218796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightA_still_sprites_1
+      name: walk_cycle_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 474
-        y: 766
-        width: 421
-        height: 624
+        x: 295
+        y: 400
+        width: 140
+        height: 266
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +170,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3329a23ca077b0290800000000000000
-      internalID: -7923108231320530381
+      spriteID: ee15173fef32e8ba0800000000000000
+      internalID: -6084886468618006034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightA_still_sprites_2
+      name: walk_cycle_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 1143
-        y: 747
-        width: 232
-        height: 638
+        x: 504
+        y: 400
+        width: 137
+        height: 277
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7fc42d405e8bc280800000000000000
-      internalID: -9021960952963870851
+      spriteID: 4cf586c5d2edcb890800000000000000
+      internalID: -7440828197917663292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightA_still_sprites_3
+      name: walk_cycle_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 762
-        width: 232
-        height: 638
+        x: 702
+        y: 400
+        width: 222
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89676a6beb317bf00800000000000000
-      internalID: 1132395541136045720
+      spriteID: 9e928ad2ece9fec80800000000000000
+      internalID: -8291233780599346711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightA_still_sprites_4
+      name: walk_cycle_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 63
-        y: 99
-        width: 444
-        height: 623
+        x: 979
+        y: 400
+        width: 140
+        height: 266
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35b1663fb4cbb9370800000000000000
-      internalID: 8330458970143988563
+      spriteID: 4c5000212a8626be0800000000000000
+      internalID: -1485509881782860348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightA_still_sprites_5
+      name: walk_cycle_spritesheet_5
       rect:
         serializedVersion: 2
-        x: 615
-        y: 94
-        width: 444
-        height: 624
+        x: 1144
+        y: 400
+        width: 136
+        height: 277
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da6e65d4a54403570800000000000000
-      internalID: 8444324455954966189
+      spriteID: d7b82ba04de0f16f0800000000000000
+      internalID: -711833912225920131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightA_still_sprites_6
+      name: walk_cycle_spritesheet_6
       rect:
         serializedVersion: 2
-        x: 1198
-        y: 84
-        width: 431
-        height: 624
+        x: 22
+        y: 38
+        width: 137
+        height: 277
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +280,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 29053f69721fa96a0800000000000000
-      internalID: -6441571164661526382
+      spriteID: 6a5b421ba55953660800000000000000
+      internalID: 7364956982385882534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightA_still_sprites_7
+      name: walk_cycle_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 1680
-        y: 97
-        width: 431
-        height: 624
+        x: 184
+        y: 38
+        width: 140
+        height: 266
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,8 +302,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87405d27c29a48660800000000000000
-      internalID: 7387215297164674168
+      spriteID: 7f1f10ba909d70bb0800000000000000
+      internalID: -4969765028233088521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_cycle_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 38
+        width: 222
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8dcaf62d863e5970800000000000000
+      internalID: 8745487506272341389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_cycle_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 38
+        width: 137
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b654dd1e03171e020800000000000000
+      internalID: 2369299333735335275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_cycle_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 38
+        width: 140
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d37c1e9b13334a00800000000000000
+      internalID: 739490957528691668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_cycle_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 38
+        width: 193
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb58f61617496a6b0800000000000000
+      internalID: -5285373897985784388
       vertices: []
       indices: 
       edges: []
@@ -310,14 +410,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      knightA_still_sprites_0: -6896276164857307867
-      knightA_still_sprites_1: -7923108231320530381
-      knightA_still_sprites_2: -9021960952963870851
-      knightA_still_sprites_3: 1132395541136045720
-      knightA_still_sprites_4: 8330458970143988563
-      knightA_still_sprites_5: 8444324455954966189
-      knightA_still_sprites_6: -6441571164661526382
-      knightA_still_sprites_7: 7387215297164674168
+      walk_cycle_spritesheet_0: -9022700132626218796
+      walk_cycle_spritesheet_1: -6084886468618006034
+      walk_cycle_spritesheet_10: 739490957528691668
+      walk_cycle_spritesheet_11: -5285373897985784388
+      walk_cycle_spritesheet_2: -7440828197917663292
+      walk_cycle_spritesheet_3: -8291233780599346711
+      walk_cycle_spritesheet_4: -1485509881782860348
+      walk_cycle_spritesheet_5: -711833912225920131
+      walk_cycle_spritesheet_6: 7364956982385882534
+      walk_cycle_spritesheet_7: -4969765028233088521
+      walk_cycle_spritesheet_8: 8745487506272341389
+      walk_cycle_spritesheet_9: 2369299333735335275
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
