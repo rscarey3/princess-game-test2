@@ -45,9 +45,9 @@ public class LevelManager : MonoBehaviour
         // else {this.path = currentPoint;}
         //if (transform.position = DangerCheck)
        // {  
-       //     int d1 = mainPath[1].dangerLevel;
-        //    int d2 = altpathA[1].dangerLevel;
-       //     int d3 = altpathB[1].dangerLevel;
+       //     int d1 = mainPath.dangerLevel;
+        //    int d2 = altpathA.dangerLevel;
+       //     int d3 = altpathB.dangerLevel;
        //     if (d1 <= d2 && d1 <= d3)
         //    {
        //       this.path = mainpath;

@@ -4618,7 +4618,7 @@ MonoBehaviour:
   startPoint: {fileID: 13026437}
   firstSteps:
   - {fileID: 13026437}
-  - {fileID: 204564654}
+  - {fileID: 1255843249}
   mainpath:
   - {fileID: 1255843249}
   - {fileID: 1155007469}
@@ -8590,6 +8590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   moveSpeed: 2
+  chosePath: 0
 --- !u!212 &718786960
 SpriteRenderer:
   m_ObjectHideFlags: 0
