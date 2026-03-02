@@ -9,8 +9,11 @@ public class LevelManager : MonoBehaviour
     public Transform startPoint;
     public Transform[] firstSteps;
     public Transform[] mainpath;
+    public int d1 = 0;
     public Transform[] altpathA;
+    public int d2 = 0;
     public Transform[] altpathB;
+    public int d3 = 0;
 
    // public GameObject FindNextPoint()
     //{
@@ -40,14 +43,8 @@ public class LevelManager : MonoBehaviour
 
     void dangerCheck()
     {
-        //if (possiblePoint == previousPoint)
-        //{ Check again}
-        // else {this.path = currentPoint;}
         //if (transform.position = DangerCheck)
        // {  
-       //     int d1 = mainPath.dangerLevel;
-        //    int d2 = altpathA.dangerLevel;
-       //     int d3 = altpathB.dangerLevel;
        //     if (d1 <= d2 && d1 <= d3)
         //    {
        //       this.path = mainpath;
@@ -71,8 +68,7 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        //this.path = firstSteps;
-        //blah blah have it run the first two steps and then stop
+        //EnemyMovement.target = GameObject.Find("Danger Check");
     }
    void Update()
     {
@@ -85,6 +81,8 @@ public class LevelManager : MonoBehaviour
         //{
             //go for the next item in the basePath array
         //}
-       //code here 
+       //if (transform.position = "Danger Check")
+       //{ dangerCheck();
+       //}
     }
 }

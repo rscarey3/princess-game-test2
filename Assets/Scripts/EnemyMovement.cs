@@ -11,11 +11,11 @@ public class EnemyMovement : MonoBehaviour
     private Transform target;
     private int pathIndex = 0;
     public bool chosePath = false;
-    //selectedPath = null;
+    public Transform path;
    
     private void Start()
     {
-       // target = LevelManager.main.path[pathIndex];
+       //target = GameObject.Find("Danger Check");
     }
 
     private void Update()
