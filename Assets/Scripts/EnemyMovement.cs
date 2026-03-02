@@ -25,6 +25,7 @@ public class EnemyMovement : MonoBehaviour
         //if (Vector2.Distance(target.position, transform.position) <= 0.1f)
        // {
         //    pathIndex++;
+        //    AudioManager.Instance.PlaySFX(AudioManager.Instance.enemymoveSFX);
 
         //    if (pathIndex == LevelManager.main.path.Length)
         //    {
@@ -34,6 +35,7 @@ public class EnemyMovement : MonoBehaviour
 
         //if (enemyHealth <= 0)
         //{ this.isDead = true;
+        //  AudioManager.Instance.PlaySFX(AudioManager.Instance.enemydeathSFX);
         //  Destroy(gameObject);
         //  Instantiate(corpsePrefab, transform.position, transform.rotation);
         //}

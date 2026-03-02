@@ -50,9 +50,11 @@ public class LevelManager : MonoBehaviour
        //       this.path = mainpath;
        //     } else if (d2 < d1 && d2 <= d3)
        //     {
+       //       AudioManager.Instance.PlaySFX(AudioManager.Instance.enemyalertSFX);
         //      this.path = altpathA;
         //    } else
        //     {
+       //       AudioManager.Instance.PlaySFX(AudioManager.Instance.enemyalertSFX);
          //     this.path = altpathB;
          //   }
         //enemy.selectedPath = this.path

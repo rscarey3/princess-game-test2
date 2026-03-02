@@ -15,6 +15,7 @@ public class CorpseBehavior : MonoBehaviour
         //on mouseClick
         //{
             //Destroy(gameObject);
+            //AudioManager.Instance.PlaySFX(AudioManager.Instance.bonepickupSFX);
             //boneCounter = boneCounter +1;
         //}
     }
