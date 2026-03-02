@@ -12,6 +12,8 @@ public class EnemyMovement : MonoBehaviour
     private int pathIndex = 0;
     public bool chosePath = false;
     public Transform path;
+    public int enemyHealth;
+    public bool isDead = false;
    
     private void Start()
     {
@@ -28,6 +30,12 @@ public class EnemyMovement : MonoBehaviour
         //    {
         //        Destroy(gameObject);
         //    }
+        //}
+
+        //if (enemyHealth <= 0)
+        //{ this.isDead = true;
+        //  Destroy(gameObject);
+        //  Instantiate(corpsePrefab, transform.position, transform.rotation);
         //}
     }
 
