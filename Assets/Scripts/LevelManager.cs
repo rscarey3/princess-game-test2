@@ -41,6 +41,7 @@ public class LevelManager : MonoBehaviour
 
     }
 
+    // void dangerCheck(Point point)
     void dangerCheck()
     {
         //if (transform.position = DangerCheck)

@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class PointInfo : MonoBehaviour
 {
+    public GameObject[] pointList;
     public int dangerLevel;
     public int visibleCorpses = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //code
+        pointList = GameObject.FindGameObjectsWithTag("Points");
     }
 
     // Update is called once per frame
