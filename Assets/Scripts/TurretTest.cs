@@ -45,8 +45,9 @@ public class TurretTest : MonoBehaviour
 
     private void ShootBullet()
     {
-        GameObject bullet = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
-        //COME BACK HERE!! VIDEO TUTORIAL #5 08:35
+        GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
+        BulletTest bulletScript = bulletObj.GetComponent<BulletTest>();
+        bulletScript.SetTargetTest(target);
         Debug.Log("POW!");
     }
 
@@ -56,12 +57,14 @@ public class TurretTest : MonoBehaviour
 
         if (hits.Length > 0)
         {
+            Debug.Log("hits.Length > 0");
             target = hits[0].transform;
         }
     }
 
     private bool CheckTargetIsInRange()
     {
+        Debug.Log("Checking if in range");
         return Vector2.Distance(target.position, transform.position) <= targetingRange;
     }
 

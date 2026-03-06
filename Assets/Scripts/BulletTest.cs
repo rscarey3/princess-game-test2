@@ -13,12 +13,16 @@ public class BulletTest : MonoBehaviour
     public void SetTargetTest(Transform _target)
     {
         target = _target;
+        Debug.Log("Found You!");
     }
 
     private void FixedUpdate()
     {
-        if (!target) return;
-
+        if (!target)
+        {
+            Debug.Log("No target found");
+            return;
+        }
         Vector2 direction = (target.position - transform. position).normalized;
 
         rb.linearVelocity = direction * bulletSpeed;
@@ -27,6 +31,7 @@ public class BulletTest : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         //Take Health From Enemy
+        Debug.Log("Hit!!");
         Destroy(gameObject);
     }
     
