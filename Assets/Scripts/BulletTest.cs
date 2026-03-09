@@ -13,7 +13,6 @@ public class BulletTest : MonoBehaviour
     public void SetTargetTest(Transform _target)
     {
         target = _target;
-        Debug.Log("Found You!");
     }
 
     private void FixedUpdate()
