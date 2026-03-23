@@ -4,6 +4,7 @@ public class BulletTest : MonoBehaviour
 {
     [Header("Attributes")]
     [SerializeField] private float bulletSpeed = 5f;
+    [SerializeField] private int bulletDamage = 1;
 
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
@@ -29,8 +30,8 @@ public class BulletTest : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        //Take Health From Enemy
-        Debug.Log("Hit!!");
+       
+        other.gameObject.GetComponent<EnemyHealth>().TakeDamage(bulletDamage);
         Destroy(gameObject);
     }
     
