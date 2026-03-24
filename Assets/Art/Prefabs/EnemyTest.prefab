@@ -203,3 +203,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e3ef17e6931ec9469c3b9d73d965d10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  corpsePrefab: {fileID: 1336553506453037644, guid: c16dba496347ccb458c1f385b261c158, type: 3}
+  hitPoints: 2

@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    [Header("References")]
+    [SerializeField] private GameObject corpsePrefab;
+
     [Header("Attributes")]
     [SerializeField] private int hitPoints = 2;
 
@@ -16,6 +19,7 @@ public class EnemyHealth : MonoBehaviour
             EnemySpawnerTest.onEnemyDestroyTest.Invoke();
             isDead = true;
             Destroy(gameObject);
+            Instantiate(corpsePrefab, this.transform.position, Quaternion.identity);
         }
     }
 }

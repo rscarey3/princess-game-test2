@@ -2,26 +2,37 @@ using UnityEngine;
 
 public class CorpseBehavior : MonoBehaviour
 {
+    [Header("References")]
+    [SerializeField] private SpriteRenderer sr;
+    [SerializeField] private Color hoverColor;
+    [SerializeField] public AudioClip boneSFX;
+    
+    [Header("Attributes")]
+    [SerializeField] public int value = 1;
+    
 
+    private Color startColor;
 
-    void spawnIn()
+    private void Start()
     {
-        //when enemy.isDead == true
-        //{//add script to make one instance of corpse object appear and also make sure to tag corpse object so it hits isTriggered collider}
+        startColor = sr.color;
     }
 
-    void corpseCollected()
+    private void OnMouseEnter()
     {
-        //on mouseClick
-        //{
-            //Destroy(gameObject);
-            //AudioManager.Instance.PlaySFX(AudioManager.Instance.bonepickupSFX);
-            //boneCounter = boneCounter +1;
-        //}
+        sr.color = hoverColor;
     }
 
-    void Update()
+    private void OnMouseExit()
     {
-        //code here
+        sr.color = startColor;
     }
+
+    private void OnMouseDown()
+    {
+        //bones += value;
+        gameObject.GetComponent<AudioManager>().PlaySFX(boneSFX);
+        Destroy(gameObject);
+    }
+
 }
