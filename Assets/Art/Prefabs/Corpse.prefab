@@ -139,5 +139,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sr: {fileID: 1381243533608885}
   hoverColor: {r: 0.42138356, g: 0.42138356, b: 0.42138356, a: 0.6431373}
-  value: 1
-  boneSFX: {fileID: 8300000, guid: 9b28210d519022c41a29b0f15ddef745, type: 3}
+  value: 50

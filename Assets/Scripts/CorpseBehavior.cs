@@ -5,10 +5,8 @@ public class CorpseBehavior : MonoBehaviour
     [Header("References")]
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Color hoverColor;
-    [SerializeField] public AudioClip boneSFX;
-    
     [Header("Attributes")]
-    [SerializeField] public int value = 1;
+    [SerializeField] public int value = 50;
     
 
     private Color startColor;
@@ -30,9 +28,9 @@ public class CorpseBehavior : MonoBehaviour
 
     private void OnMouseDown()
     {
-        //bones += value;
-        gameObject.GetComponent<AudioManager>().PlaySFX(boneSFX);
+        LevelManager2.main.IncreaseBones(value);
         Destroy(gameObject);
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.bonePickupSFX);
     }
 
 }
