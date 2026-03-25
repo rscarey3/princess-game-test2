@@ -30,7 +30,6 @@ public class LevelManager2 : MonoBehaviour
         if (amount <= boneCurrency)
         {
             //buy item
-            //buh
             boneCurrency -= amount;
             return true;
         } else

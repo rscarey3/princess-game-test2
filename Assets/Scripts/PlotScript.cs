@@ -26,11 +26,9 @@ public class PlotScript : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Build tower here!");
-
         if (tower != null) return;
 
-        GameObject towerToBuild = BuildManager.main.GetSelectedTower();
-        tower = Instantiate(towerToBuild, transform.position, Quaternion.identity);
+        TowerTest towerToBuild = BuildManager.main.GetSelectedTower();
+        tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
     }
 }
