@@ -168,6 +168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4656234677989133936}
+  slomoColor: {r: 0.32319856, g: 1, b: 0, a: 0.5529412}
+  sr: {fileID: 7986445710634671164}
   moveSpeed: 2
 --- !u!95 &-874386441471824625
 Animator:

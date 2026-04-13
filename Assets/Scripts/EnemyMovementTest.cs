@@ -4,6 +4,8 @@ public class EnemyMovementTest : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Color slomoColor;
+    [SerializeField] private SpriteRenderer sr;
 
     [Header("Attributes")]
     [SerializeField] private float moveSpeed = 2f;
@@ -11,9 +13,15 @@ public class EnemyMovementTest : MonoBehaviour
     private Transform target;
     private int pathIndex = 0;
 
+    private float baseSpeed;
+
+    private Color startColor;
+
     void Start()
     {
+        baseSpeed = moveSpeed;
         target = LevelManager2.main.path[pathIndex];
+        startColor = sr.color;
     }
 
     void Update()
@@ -32,6 +40,14 @@ public class EnemyMovementTest : MonoBehaviour
                 target = LevelManager2.main.path[pathIndex];
             }
         }
+
+        if (moveSpeed < baseSpeed)
+        {
+            sr.color = slomoColor;
+        } else if (moveSpeed == baseSpeed)
+        {
+            sr.color = startColor;
+        }
     }
 
     private void FixedUpdate()
@@ -39,5 +55,27 @@ public class EnemyMovementTest : MonoBehaviour
         Vector2 direction = (target.position - transform.position).normalized;
 
         rb.linearVelocity = direction * moveSpeed;
+    }
+
+   // private void FreezeCheck()
+   // {
+   //     if (moveSpeed > baseSpeed)
+   //     {
+   //         sr.color = slomoColor;
+   //     } else if (moveSpeed == baseSpeed)
+   //     {
+   //         sr.color = startColor;
+   //     }
+   // }
+
+    public void UpdateSpeed(float newSpeed)
+    {
+        moveSpeed = newSpeed;
+    //    FreezeCheck();
+    }
+
+    public void ResetSpeed()
+    {
+        moveSpeed = baseSpeed;
     }
 }
