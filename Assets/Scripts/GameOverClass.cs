@@ -8,10 +8,17 @@ public class GameOverClass : MonoBehaviour
     [SerializeField] private GameObject gameoverscreen;
     [SerializeField] private Animator anim;
     [SerializeField] TextMeshProUGUI killsUI;
+    
+    public int enemiesKilled;
 
+    private void Awake()
+    {
+        gameoverscreen.SetActive(false);
+        enemiesKilled = 0;
+    }
     private void OnGUI()
     {
-        //killsUI.text = [PUT THING HERE TO COUNT ENEMIES KILLED]
+        killsUI.text = enemiesKilled.ToString();
     }
 
     void Update()
@@ -21,7 +28,8 @@ public class GameOverClass : MonoBehaviour
             return;
         } else if (prescued.princessRescued = true)
         {
-            //code to make the screen appear
+            //anim.SetBool(CODE HERE) //add animation if time
+            gameoverscreen.SetActive(true);
             Time.timeScale = 0f;
         }
     }
