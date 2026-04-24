@@ -2736,6 +2736,7 @@ MonoBehaviour:
   gameoverscreen: {fileID: 539513572}
   anim: {fileID: 539513577}
   killsUI: {fileID: 961308194}
+  enemiesKilled: 0
 --- !u!95 &539513577
 Animator:
   serializedVersion: 7
@@ -5776,7 +5777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1589633901
 Transform:
   m_ObjectHideFlags: 0
@@ -5864,7 +5865,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1642707215
 Transform:
   m_ObjectHideFlags: 0
@@ -8978,7 +8979,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2135194246
 MonoBehaviour:
   m_ObjectHideFlags: 0

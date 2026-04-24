@@ -16,7 +16,7 @@ public class PopupClass : MonoBehaviour
         isPopupOpen = !isPopupOpen;
         if (isPopupOpen == false)
         {
-            popupMenu.SetActive(false);
+            //popupMenu.SetActive(false);
         }
     }
 
@@ -26,6 +26,7 @@ public class PopupClass : MonoBehaviour
         {
             Time.timeScale = 1f;
             popupMenu.SetActive(false);
+            Debug.Log("Popup is closed");
             return;
         }  else if (isPopupOpen == true)
         {

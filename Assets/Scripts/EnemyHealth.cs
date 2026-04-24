@@ -4,7 +4,7 @@ public class EnemyHealth : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private GameObject corpsePrefab;
-    [SerializeField] private GameOverClass deadEnemies;
+    //[SerializeField] private GameOverClass deadEnemies;
 
     [Header("Attributes")]
     [SerializeField] private int hitPoints = 2;
@@ -19,7 +19,7 @@ public class EnemyHealth : MonoBehaviour
         {
             EnemySpawnerTest.onEnemyDestroyTest.Invoke();
             isDead = true;
-            deadEnemies.enemiesKilled++;
+            //deadEnemies.enemiesKilled++;
             Destroy(gameObject);
             Instantiate(corpsePrefab, this.transform.position, Quaternion.identity);
         }
