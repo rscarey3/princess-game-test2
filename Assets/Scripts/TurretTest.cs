@@ -16,6 +16,7 @@ public class TurretTest : MonoBehaviour
 
     private Transform target;
     private float timeUntilFire;
+    public Vector2 firingDirection;
 
     private void Update()
     {
@@ -48,6 +49,7 @@ public class TurretTest : MonoBehaviour
         GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
         BulletTest bulletScript = bulletObj.GetComponent<BulletTest>();
         bulletScript.SetTargetTest(target);
+        //bulletScript.
     }
 
     private void FindTarget()
@@ -56,7 +58,6 @@ public class TurretTest : MonoBehaviour
 
         if (hits.Length > 0)
         {
-            Debug.Log("hits.Length > 0");
             target = hits[0].transform;
         }
     }
@@ -70,7 +71,7 @@ public class TurretTest : MonoBehaviour
     private void RotateTowardsTarget()
     {
         float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
-
+        //PUT THING IN TO UPDATE firingDirection AND KEEP IT STATIC UNTIL FIRED AGAIN
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
         turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
