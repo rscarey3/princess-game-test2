@@ -2554,7 +2554,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Basic Turret
+  m_text: 'Dragon
 
     100
 
@@ -3711,7 +3711,7 @@ GameObject:
   - component: {fileID: 874411972}
   - component: {fileID: 874411971}
   m_Layer: 5
-  m_Name: Slomo Turret
+  m_Name: Bone Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5052,7 +5052,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Slo-Mo Turret
+  m_text: 'Hex (Slo-mo)
 
     200
 
@@ -5962,8 +5962,8 @@ Transform:
   m_GameObject: {fileID: 1642707214}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.9, y: 1.5, z: -0.13587591}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalPosition: {x: -7.74, y: 3.3824, z: -0.13587591}
+  m_LocalScale: {x: 0.3887377, y: 0.3364149, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1930865961}
@@ -6012,7 +6012,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 30000
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -7365077953607938323, guid: 4d5498029c978df458b484c44749fbc2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7454,7 +7454,7 @@ GameObject:
   - component: {fileID: 1903000694}
   - component: {fileID: 1903000693}
   m_Layer: 5
-  m_Name: Basic Turret
+  m_Name: Dragon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

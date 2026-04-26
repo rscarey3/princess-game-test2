@@ -23,10 +23,10 @@ public class GameOverClass : MonoBehaviour
 
     void Update()
     {
-        if (prescued.princessRescued = false)
+        if (prescued.princessRescued == false)
         {
             return;
-        } else if (prescued.princessRescued = true)
+        } else if (prescued.princessRescued == true)
         {
             //anim.SetBool(CODE HERE) //add animation if time
             gameoverscreen.SetActive(true);

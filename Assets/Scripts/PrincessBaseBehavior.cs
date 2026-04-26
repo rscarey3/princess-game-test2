@@ -3,22 +3,22 @@ using UnityEngine;
 public class PrincessBaseBehavior : MonoBehaviour
 {
     [Header("References")]
-    public float princessHealth;
-    private float baseHealth;
+    public int princessHealth;
+    private int baseHealth;
     //code here
 
-    public bool princessRescued;
+    public bool princessRescued = false;
 
     private void Awake()
     {
-        princessHealth = 5f;
+        princessHealth = 5;
         baseHealth = princessHealth;
         princessRescued = false;
     }
 
-    public void DamageBase(float dmg)
+    public void DamageBase(int dmg)
     {
-        //princessHealth = princessHealth - dmg;
+        princessHealth = princessHealth - dmg;
     }
 
     public void PrincessRescued()
