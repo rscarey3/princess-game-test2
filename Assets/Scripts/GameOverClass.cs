@@ -4,7 +4,7 @@ using TMPro;
 public class GameOverClass : MonoBehaviour
 {
     [Header("References")]
-    public PrincessBaseBehavior prescued;
+    [SerializeField] private PrincessBaseBehavior prescued;
     [SerializeField] private GameObject gameoverscreen;
     [SerializeField] private Animator anim;
     [SerializeField] TextMeshProUGUI killsUI;
@@ -28,7 +28,6 @@ public class GameOverClass : MonoBehaviour
             return;
         } else if (prescued.princessRescued == true)
         {
-            //anim.SetBool(CODE HERE) //add animation if time
             gameoverscreen.SetActive(true);
             Time.timeScale = 0f;
         }

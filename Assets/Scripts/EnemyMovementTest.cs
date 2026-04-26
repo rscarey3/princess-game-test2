@@ -6,7 +6,7 @@ public class EnemyMovementTest : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Color slomoColor;
     [SerializeField] private SpriteRenderer sr;
-    [SerializeField] private ScreenShakeManager shake;
+    //[SerializeField] private GameObject screenShake;
 
     [Header("Attributes")]
     [SerializeField] private float moveSpeed = 2f;
@@ -17,6 +17,8 @@ public class EnemyMovementTest : MonoBehaviour
     private float baseSpeed;
 
     private Color startColor;
+
+    //private Shake shake = screenShake.GetComponent<ScreenShakeManager>();
 
     void Start()
     {
@@ -35,7 +37,7 @@ public class EnemyMovementTest : MonoBehaviour
             {
                 EnemySpawnerTest.onEnemyDestroyTest.Invoke();
                 Destroy(gameObject);
-                //ScreenShakeManager.Shake(2f, 1f);
+                //shake.Shake(2f, 1f);
                 return;
             } else
             {

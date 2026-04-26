@@ -1,10 +1,14 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PrincessBaseBehavior : MonoBehaviour
 {
     [Header("References")]
-    public int princessHealth;
-    private int baseHealth;
+    [SerializeField] public int princessHealth;
+    [SerializeField] private int baseHealth;
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private ScreenShakeManager shake;
+    [SerializeField] private GameOverClass gamover;
     //code here
 
     public bool princessRescued = false;
@@ -16,16 +20,18 @@ public class PrincessBaseBehavior : MonoBehaviour
         princessRescued = false;
     }
 
-    public void DamageBase(int dmg)
-    {
-        princessHealth = princessHealth - dmg;
-    }
-
     public void PrincessRescued()
     {
         princessRescued = true;
-        //script to end game
+        SceneManager.LoadScene("GameOver");
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        shake.Shake(2f, 1f);
+        princessHealth--;
+    }
+
     void Update()
     {
         if (princessHealth > 0)
