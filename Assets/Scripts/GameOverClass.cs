@@ -1,35 +1,16 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameOverClass : MonoBehaviour
 {
-    [Header("References")]
-    [SerializeField] private PrincessBaseBehavior prescued;
-    [SerializeField] private GameObject gameoverscreen;
-    [SerializeField] private Animator anim;
-    [SerializeField] TextMeshProUGUI killsUI;
-    
-    public int enemiesKilled;
-
-    private void Awake()
+    public void MainFromGameOver()
     {
-        gameoverscreen.SetActive(false);
-        enemiesKilled = 0;
-    }
-    private void OnGUI()
-    {
-        killsUI.text = enemiesKilled.ToString();
+        SceneManager.LoadScene("MainMenu");
     }
 
-    void Update()
+    public void ReplayLevel()
     {
-        if (prescued.princessRescued == false)
-        {
-            return;
-        } else if (prescued.princessRescued == true)
-        {
-            gameoverscreen.SetActive(true);
-            Time.timeScale = 0f;
-        }
+        SceneManager.LoadScene("TestScene4");
     }
 }

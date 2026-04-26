@@ -8,8 +8,6 @@ public class PrincessBaseBehavior : MonoBehaviour
     [SerializeField] private int baseHealth;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private ScreenShakeManager shake;
-    [SerializeField] private GameOverClass gamover;
-    //code here
 
     public bool princessRescued = false;
 
